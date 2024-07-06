@@ -1,3 +1,12 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 :root {
   --header-background: #212529;
   --header-button: #2082f4;
@@ -10,4 +19,60 @@
   --aSiteGov-button: #01698b;
   --section-instalador-background: #f84233;
   --footer-background: #1d1d1b;
+  --font-quick: Quicksand, sans-serif;
+  --font-popp: Poppins, sans-serif;
+  --font-heeb: Heebo, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 3rem;
+  background: var(--header-background);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.h-nav__menu--desktop {
+  display: flex;
+  gap: 2rem;
+}
+
+.h-nav__menu__item {
+  font: 800 0.8rem var(--font-quick);
+  color: #ffffff;
+}
+
+.h-nav__button {
+  color: #ffffff;
+}
+
+.start {
+  background: var(--header-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0rem 0rem 0rem;
+  height: 100vh;
+}
+
+.start__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.s-content__p {
+  color: #aebfc7;
+  font: 500 1rem var(--font-quick);
+}
+
+.s-content__h1 {
+  font: 700 2.2rem var(--font-popp);
+  text-transform: uppercase;
 }
