@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Poppins:wght@300&display=swap");
+
+:root {
+  --header-background: #212529;
+  --header-button: #2082f4;
+  --header-span: #fab100;
+  --aAmbiental-button: #005b41;
+  --aCidadao-button: #3846b1;
+  --aContatracao-button: #5a3a86;
+  --aGedGov-button: #316191;
+  --aLegislativo-button: #009d4d;
+  --aSiteGov-button: #01698b;
+  --section-instalador-background: #f84233;
+  --footer-background: #1d1d1b;
+}
