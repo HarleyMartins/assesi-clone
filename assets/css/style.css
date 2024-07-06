@@ -59,6 +59,7 @@ nav {
   align-items: center;
   padding: 10rem 0rem 0rem 0rem;
   height: 100vh;
+  position: relative;
 }
 
 .start__content {
@@ -75,4 +76,18 @@ nav {
 .s-content__h1 {
   font: 700 2.2rem var(--font-popp);
   text-transform: uppercase;
+}
+
+.start__img--absolute {
+  position: absolute;
+}
+
+#predios {
+  width: 100%;
+  bottom: 0;
+}
+
+#onda {
+  bottom: 0;
+  width: 100%;
 }
