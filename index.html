@@ -17,30 +17,36 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <img
-        src="./assets/img/header/logo-w.png"
-        alt="WhiteLogoAssesi"
-        class="header__img"
-      />
+      <div class="header__top">
+        <img
+          src="./assets/img/header/logo-w.png"
+          alt="WhiteLogoAssesi"
+          class="header__img"
+        />
 
-      <nav>
-        <ul class="h-nav__menu--desktop">
-          <a class="h-nav__menu__item" href="#">Home</a>
-          <a class="h-nav__menu__item" href="#">Quem Somos</a>
-          <a class="h-nav__menu__item" href="#">Blog</a>
-          <a class="h-nav__menu__item" href="#">Utilitários</a>
-          <a class="h-nav__menu__item" href="#">Softwares</a>
-          <a class="h-nav__menu__item" href="#">Contatos</a>
-        </ul>
-        <a class="h-nav__button" href="#">Orçamento</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="start">
+        <nav>
+          <ul class="h-nav__menu--desktop">
+            <a class="h-nav__menu__item" href="#">Home</a>
+            <a class="h-nav__menu__item" href="#">Quem Somos</a>
+            <a class="h-nav__menu__item" href="#">Blog</a>
+            <a class="h-nav__menu__item" href="#">Utilitários</a>
+            <a class="h-nav__menu__item" href="#">Softwares</a>
+            <a class="h-nav__menu__item" href="#">Contatos</a>
+          </ul>
+          <a class="h-nav__button" href="#">Orçamento</a>
+        </nav>
+      </div>
+      <div class="start">
         <!-- IMAGENS ABSOLUTAS -->
         <img
           src="./assets/img/header/banner-principal.png"
@@ -58,91 +64,98 @@
         <!-- FIM IMAGENS ABSOLUTAS -->
         <div class="start__content">
           <p class="s-content__p">Infinite Possibilities</p>
-          <h1 class="s-content__h1">Infinitas Possibilidades</h1>
+          <h3 class="s-content__h3">Infinitas Possibilidades</h3>
         </div>
-      </section>
 
+        <div class="start__search">
+          <div class="start__search__input">
+            <i class="fa fa-globe"></i>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Faça uma busca rápida"
+            />
+          </div>
+
+          <button data-original-title="Pesquisar">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
       <section class="aCards">
         <!-- CARD aAMBIENTAL -->
         <div class="card">
-          <img src="" alt="imgaAmbiental" class="card__img" />
           <div class="card__text">
-            <h3 class="c-text__h3">aAmbiental</h3>
+            <img src="" alt="imgaAmbiental" class="card__img" />
+            <h5 class="c-text__h5">aAmbiental</h5>
             <p class="c-text__p">
               Sistema de liberação, controle e acompanhamento das linçencas
               ambientais
             </p>
           </div>
-          <a class="card__a" href="#">Saiba mais</a>
+          <a class="card__a" id="aAmbiental" href="#">Saiba mais</a>
         </div>
 
         <!-- CARD aCIDADAO -->
         <div class="card">
-          <img src="" alt="imgaCidadao" class="card__img" />
           <div class="card__text">
-            <h3 class="c-text__h3">aCidadão</h3>
+            <img src="" alt="imgaCidadao" class="card__img" />
+            <h5 class="c-text__h5">aCidadão</h5>
             <p class="c-text__p">Sistema de controle de atendimentos</p>
           </div>
-          <a class="card__a" href="#">Saiba mais</a>
+          <a class="card__a" id="aCidadao" href="#">Saiba mais</a>
         </div>
         <!-- CARD aCONTRATACAO -->
         <div class="card">
-          <img src="" alt="imgaContratacao" class="card__img" />
           <div class="card__text">
-            <h3 class="c-text__h3">aContratação</h3>
+            <img src="" alt="imgaContratacao" class="card__img" />
+            <h5 class="c-text__h5">aContratação</h5>
             <p class="c-text__p">
               Sistema de Gerenciamento e elaboração do fluxo de contratações,
               banco de preços, integração ao...
             </p>
           </div>
-          <a class="card__a" href="#">Saiba mais</a>
+          <a class="card__a" id="aContratacao" href="#">Saiba mais</a>
         </div>
 
         <!-- CARD aGEDGOV -->
         <div class="card">
-          <img src="" alt="imgaGedGov" class="card__img" />
           <div class="card__text">
-            <h3 class="c-text__h3">aGedGov</h3>
+            <img src="" alt="imgaGedGov" class="card__img" />
+            <h5 class="c-text__h5">aGedGov</h5>
             <p class="c-text__p">
               Sistema de Gerenciamento eletrônico de documentos governamentais.
             </p>
           </div>
-          <a class="card__a" href="#">Saiba mais</a>
+          <a class="card__a" id="aGedGov" href="#">Saiba mais</a>
         </div>
 
         <!-- CARD aLEGISLATIVO -->
         <div class="card">
-          <img src="" alt="imgaLegislativo" class="card__img" />
           <div class="card__text">
-            <h3 class="c-text__h3">aLegislativo</h3>
+            <img src="" alt="imgaLegislativo" class="card__img" />
+            <h5 class="c-text__h5">aLegislativo</h5>
             <p class="c-text__p">
               Sistema para controle e apoio às Câmaras de Vereadores e ao poder
               Legislativo
             </p>
           </div>
-          <a class="card__a" href="#">Saiba mais</a>
-        </div>
-        <div class="card">
-          <img src="" alt="imgaContratacao" class="card__img" />
-          <div class="card__text">
-            <h3 class="c-text__h3">aContratação</h3>
-            <p class="c-text__p">
-              Sistema de liberação, controle e acompanhamento das linçencas
-              ambientais
-            </p>
-          </div>
-          <a class="card__a" href="#">Saiba mais</a>
+          <a class="card__a" id="aLegislativo" href="#">Saiba mais</a>
         </div>
         <!-- CARD aSITEGOV -->
         <div class="card">
-          <img src="" alt="imgaSiteGov" class="card__img" />
           <div class="card__text">
-            <h3 class="c-text__h3">aSiteGov</h3>
+            <img src="" alt="imgaSiteGov" class="card__img" />
+            <h5 class="c-text__h5">aSiteGov</h5>
             <p class="c-text__p">
               Sistema de gerenciamento e controle de site governamental
             </p>
           </div>
-          <a class="card__a" href="#">Saiba mais</a>
+          <a class="card__a" id="aSiteGov" href="#">Saiba mais</a>
         </div>
       </section>
       <h3 class="solutions__h3">Outras Soluções</h3>
