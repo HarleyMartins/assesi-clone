@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --header-background: #212529;
+  --header-button: #2082f4;
+  --header-span: #fab100;
+  --aAmbiental-button: #005b41;
+  --aCidadao-button: #3846b1;
+  --aContatracao-button: #5a3a86;
+  --aGedGov-button: #316191;
+  --aLegislativo-button: #009d4d;
+  --aSiteGov-button: #01698b;
+  --section-instalador-background: #f84233;
+  --footer-background: #1d1d1b;
+  --font-quick: Quicksand, sans-serif;
+  --font-popp: Poppins, sans-serif;
+  --font-heeb: Heebo, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background: linear-gradient(to bottom right, #565656, #2e2e2e) !important;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+  border-bottom: 1px solid #8080805a;
+  padding: 3rem 3rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.h-nav__menu--desktop {
+  display: flex;
+  gap: 2rem;
+}
+
+.h-nav__menu__item {
+  font: 600 1.3rem var(--font-quick);
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.h-nav__button {
+  color: #ffffff;
+  background: #2082f4;
+  padding: 5px 30px;
+  border-radius: 20px;
+  font: 600 1.3rem var(--font-quick);
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0rem 0rem 0rem;
+  height: 100vh;
+  position: relative;
+}
+
+.start__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 0rem 0rem 0rem;
+}
+
+.s-content__p {
+  color: #aebfc7;
+  text-transform: none;
+  letter-spacing: 0;
+  font: 500 1.4rem var(--font-quick);
+}
+
+.s-content__h3 {
+  font: 700 3.5rem var(--font-popp);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0rem 0rem 3rem 0rem;
+}
+
+.start__img--absolute {
+  position: absolute;
+}
+
+.start__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+  background-color: #fff;
+  min-width: 65rem;
+}
+
+.start__search__input {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.start__search__input i {
+  font-size: 2rem;
+  opacity: 0.2;
+}
+
+.start__search__input input {
+  font: 500 1.7rem var(--font-heeb);
+  z-index: 10;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: #8ba2ad;
+}
+
+.start__search__input input::placeholder {
+  color: #8ba2ad;
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+
+.start__search button {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-image: linear-gradient(to right, #f6b142, #f6b142);
+  font-size: 1.4px;
+}
+
+.start__search button:has(i) {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#predios {
+  width: 100%;
+  bottom: 0;
+}
+
+#onda {
+  bottom: 0;
+  width: 100%;
+}
+
+.aCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin: -10rem 5rem 0rem 5rem;
+}
+
+.card {
+  z-index: 100;
+  display: flex;
+  width: 35rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #eaeef1;
+  border-radius: 8px;
+  min-height: 270px;
+  padding: 20px 30px;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+  width: 100%;
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.c-text__h5 {
+  font: 700 1.7rem var(--font-popp);
+  letter-spacing: -0.2px;
+}
+
+.c-text__p {
+  font: 300 1.3rem var(--font-popp);
+  line-height: 23px;
+}
+
+.card__a {
+  font: 700 1.3rem var(--font-quick);
+  letter-spacing: 0.5px;
+  color: #fff;
+  padding: 1rem 1.7rem;
+  border-radius: 0.6rem;
+}
+#aAmbiental {
+  background-color: var(--aAmbiental-button);
+}
+
+#aCidadao {
+  background-color: var(--aCidadao-button);
+}
+
+#aContratacao {
+  background: var(--aContatracao-button);
+}
+
+#aGedGov {
+  background: var(--aGedGov-button);
+}
+
+#aLegislativo {
+  font-variant: var(--aLegislativo-button);
+}
+
+#aSiteGov {
+  font-variant: var(--aSiteGov-button);
+}
