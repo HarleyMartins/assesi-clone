@@ -15,16 +15,23 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="bg-headerBackground h-[95vh]">
+    <header class="bg-headerGradient h-[95vh] relative z-10">
       <!-- HEADER NAVBAR -->
       <div
-        class="flex items-center justify-between border-b border-gray-600 border-opacity-25 px-4 py-6"
+        class="flex flex-wrap items-center justify-between border-b border-gray-600 border-opacity-25 px-4 py-6"
       >
-        <img src="./assets/img/header/logo-w.png" alt="logoBranca" />
+        <a class="py-2" href="https://assesi.com">
+          <img src="./assets/img/header/logo-w.png" alt="logoBranca" />
+        </a>
 
-        <div class="flex items-center gap-4">
+        <div class="ml-auto">
           <i class="fa fa-bars text-white text-xl" aria-hidden="true"></i>
-          <a class="bg-navButton text-white px-6 rounded-full" href="#"
+        </div>
+
+        <div class="pl-2">
+          <a
+            class="bg-navButton text-white text-sm px-6 py-1 font-medium rounded-full"
+            href="#"
             >Orçamento</a
           >
         </div>
@@ -32,9 +39,51 @@
       <!-- FIM HEADER NAVBAR -->
 
       <!-- HEADER TEXT -->
+      <div class="flex flex-col items-center mt-24">
+        <p class="text-xs uppercase text-slate-500 pb-2">
+          Infinite Possibilities
+        </p>
+        <h1
+          class="text-white uppercase font-bold text-3xl text-center w-72 pb-5"
+        >
+          infinitas possibilidades
+        </h1>
 
+        <div
+          class="bg-white flex items-center justify-between gap-6 py-3 px-4 rounded-2xl"
+        >
+          <div class="flex items-center gap-4">
+            <i class="fa fa-globe opacity-20 text-xl"></i>
+            <input
+              class="outline-none text-base"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Faça uma busca rápida"
+              required
+            />
+          </div>
+
+          <button class="bg-navNotification w-8 h-8 rounded-full">
+            <i class="fa fa-search text-white text-sm"></i>
+          </button>
+        </div>
+      </div>
       <!-- FIM HEADER TEXT -->
+      <img
+        id="bannerPrincipal"
+        class="absolute bottom-0 -z-10 max-w-full h-full object-cover w-tamBannerPrincipal"
+        src="./assets/img/header/banner-principal.png"
+        alt="bannerPrincipal"
+      />
+
+      <img
+        class="absolute bottom-0"
+        src="./assets/img/header/bottom-header-bar.svg"
+        alt="header-onda"
+      />
     </header>
+
     <!-- FIM HEADER -->
   </body>
 </html>

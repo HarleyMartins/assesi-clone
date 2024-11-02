@@ -18,6 +18,13 @@ module.exports = {
       },
 
       fontFamily: {},
+      width: {
+        tamBannerPrincipal: "1100px",
+      },
+
+      backgroundImage: {
+        headerGradient: "linear-gradient(to bottom right, #565656, #2E2E2E)",
+      },
     },
   },
   plugins: [],
